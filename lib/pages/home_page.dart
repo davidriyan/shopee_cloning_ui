@@ -300,10 +300,103 @@ class HomePage extends StatelessWidget {
                             Padding(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 13.0),
-                              child: Container(
-                                width: 401,
-                                height: 110,
-                                color: Colors.white,
+                              child: Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  Container(
+                                    width: 401,
+                                    height: 110,
+                                    color: Colors.white,
+                                  ),
+                                  Container(
+                                    width: 351,
+                                    height: 85,
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            color: Color(0xff939395))),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          width: 94,
+                                          height: 85,
+                                          color: Color(0xff4DA9A4),
+                                          child: Center(
+                                            child: Text(
+                                              'GRATIS ONGKIR',
+                                              textAlign: TextAlign.center,
+                                              style: GoogleFonts.roboto(
+                                                  color: Color(0xffFFFFFF),
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(width: 10),
+                                        Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            SizedBox(height: 8),
+                                            Text(
+                                              'Min. Belanja Rp0',
+                                              style: GoogleFonts.roboto(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.w600),
+                                            ),
+                                            SizedBox(height: 6),
+                                            Container(
+                                              height: 15,
+                                              width: 90,
+                                              color: Color(0xffFFEAD9),
+                                              child: Text(
+                                                'Pengguna Baru',
+                                                textAlign: TextAlign.center,
+                                                style: GoogleFonts.roboto(
+                                                    fontSize: 12,
+                                                    color: Color(0xffFF6A6A)),
+                                              ),
+                                            ),
+                                            SizedBox(height: 6),
+                                            Text(
+                                              'Berlaku 60 Hari',
+                                              style: GoogleFonts.roboto(
+                                                  fontSize: 15,
+                                                  color: Color(0xff7C7C7C)),
+                                            )
+                                          ],
+                                        ),
+                                        SizedBox(width: 18),
+                                        Container(
+                                          height: 27,
+                                          width: 68,
+                                          decoration: BoxDecoration(
+                                              color: Color(0xffED4D2D),
+                                              borderRadius:
+                                                  BorderRadius.circular(4)),
+                                          child: Material(
+                                            borderRadius:
+                                                BorderRadius.circular(4),
+                                            color: Colors.transparent,
+                                            child: InkWell(
+                                              onTap: () {},
+                                              borderRadius:
+                                                  BorderRadius.circular(4),
+                                              child: Center(
+                                                child: Text(
+                                                  'Lihat',
+                                                  textAlign: TextAlign.center,
+                                                  style: GoogleFonts.roboto(
+                                                      color: Color(0xffFFFFFF),
+                                                      fontSize: 15),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ],
                               ),
                             )
                           ],
