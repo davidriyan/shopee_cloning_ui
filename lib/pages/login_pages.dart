@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:project/pages/home_page.dart';
+import 'package:project/pages/bottom_nav_bar.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 2,
-        backgroundColor: Color(0xffFFFFFF),
+        backgroundColor: const Color(0xffFFFFFF),
         title: Text(
           'Login',
           style: GoogleFonts.roboto(fontSize: 18, color: Colors.black),
@@ -22,24 +22,24 @@ class LoginPage extends StatelessWidget {
               height: 28,
               width: 30,
               child: SvgPicture.asset('assets/svgs/chart.svg')),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           SizedBox(
               height: 24,
               width: 23,
               child: SvgPicture.asset('assets/svgs/tandatanya.svg')),
-          SizedBox(width: 10)
+          const SizedBox(width: 10)
         ],
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             SizedBox(
                 height: 57,
                 width: 57,
                 child: Image.asset('assets/images/shopee.png')),
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             //membuat form yang menampung data email dan password
             Form(
                 child: Column(
@@ -50,13 +50,13 @@ class LoginPage extends StatelessWidget {
                     width: 378,
                     child: TextFormField(
                       decoration: InputDecoration(
-                        border: UnderlineInputBorder(
+                        border: const UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.black)),
-                        focusedBorder: UnderlineInputBorder(
+                        focusedBorder: const UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.black)),
                         hintText: 'Email/Telephone/Username',
                         hintStyle: GoogleFonts.roboto(
-                            fontSize: 18, color: Color(0xffC4C4C4)),
+                            fontSize: 18, color: const Color(0xffC4C4C4)),
                         prefixIcon: Padding(
                           padding: const EdgeInsets.all(12.0),
                           child: SvgPicture.asset('assets/svgs/usericon.svg'),
@@ -72,13 +72,13 @@ class LoginPage extends StatelessWidget {
                     child: TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
-                          focusedBorder: UnderlineInputBorder(
+                          focusedBorder: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Color(0xffCBCBCB))),
-                          border: UnderlineInputBorder(
+                          border: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Color(0xffCBCBCB))),
                           hintText: 'Password',
                           hintStyle: GoogleFonts.roboto(
-                              fontSize: 18, color: Color(0xffC4C4C4)),
+                              fontSize: 18, color: const Color(0xffC4C4C4)),
                           prefixIcon: Padding(
                             padding: const EdgeInsets.all(12.0),
                             child: SvgPicture.asset(
@@ -91,9 +91,9 @@ class LoginPage extends StatelessWidget {
                               children: [
                                 SvgPicture.asset(
                                     'assets/svgs/obsecuretext.svg'),
-                                SizedBox(width: 10),
+                                const SizedBox(width: 10),
                                 SvgPicture.asset('assets/svgs/reactangle.svg'),
-                                SizedBox(width: 10),
+                                const SizedBox(width: 10),
                                 TextButton(
                                     onPressed: () {},
                                     child: Text(
@@ -101,7 +101,7 @@ class LoginPage extends StatelessWidget {
                                       style: GoogleFonts.roboto(
                                           fontWeight: FontWeight.w300,
                                           fontSize: 15,
-                                          color: Color(0xff247AC7)),
+                                          color: const Color(0xff247AC7)),
                                     ))
                               ],
                             ),
@@ -111,14 +111,14 @@ class LoginPage extends StatelessWidget {
                 ),
               ],
             )),
-            SizedBox(height: 33),
+            const SizedBox(height: 33),
             //membuat fitur button login
             Container(
               width: 353,
               height: 43,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(3),
-                  color: Color(0xffE8E8E8)),
+                  color: const Color(0xffE8E8E8)),
               child: Material(
                 borderRadius: BorderRadius.circular(3),
                 color: Colors.transparent,
@@ -127,7 +127,7 @@ class LoginPage extends StatelessWidget {
                   onTap: () {
                     Navigator.pushReplacement(context, MaterialPageRoute(
                       builder: (context) {
-                        return HomePage();
+                        return const NavBar();
                       },
                     ));
                   },
@@ -135,7 +135,7 @@ class LoginPage extends StatelessWidget {
                       child: Text(
                     'Login',
                     style: GoogleFonts.roboto(
-                        fontSize: 15, color: Color(0xffB0B0B0)),
+                        fontSize: 15, color: const Color(0xffB0B0B0)),
                   )),
                 ),
               ),
@@ -152,9 +152,9 @@ class LoginPage extends StatelessWidget {
                         style: GoogleFonts.roboto(
                             fontWeight: FontWeight.w300,
                             fontSize: 15,
-                            color: Color(0xff247AC7)),
+                            color: const Color(0xff247AC7)),
                       )),
-                  Spacer(),
+                  const Spacer(),
                   TextButton(
                       onPressed: () {},
                       child: Text(
@@ -162,13 +162,13 @@ class LoginPage extends StatelessWidget {
                         style: GoogleFonts.roboto(
                             fontWeight: FontWeight.w300,
                             fontSize: 15,
-                            color: Color(0xff247AC7)),
+                            color: const Color(0xff247AC7)),
                       ))
                 ],
               ),
             ),
             // membuat list fitur button (lanjutkan dengan google, facebook, line, apple)
-            SizedBox(height: 23),
+            const SizedBox(height: 23),
             InkWell(
               borderRadius: BorderRadius.circular(3),
               onTap: () {},
@@ -184,20 +184,20 @@ class LoginPage extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10.0),
                       child: SvgPicture.asset('assets/svgs/googleicon.svg'),
                     ),
-                    Spacer(flex: 1),
+                    const Spacer(flex: 1),
                     Text(
                       'Lanjutkan dengan Google',
                       style: GoogleFonts.roboto(
                           fontSize: 14, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(width: 10),
-                    Spacer(flex: 1)
+                    const SizedBox(width: 10),
+                    const Spacer(flex: 1)
                   ],
                 ),
               ),
             ),
             //button Facebook
-            SizedBox(height: 23),
+            const SizedBox(height: 23),
             InkWell(
               borderRadius: BorderRadius.circular(3),
               onTap: () {},
@@ -213,7 +213,7 @@ class LoginPage extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10.0),
                       child: SvgPicture.asset('assets/svgs/facebookicon.svg'),
                     ),
-                    Spacer(
+                    const Spacer(
                       flex: 1,
                     ),
                     Text(
@@ -221,14 +221,14 @@ class LoginPage extends StatelessWidget {
                       style: GoogleFonts.roboto(
                           fontSize: 14, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(width: 10),
-                    Spacer(flex: 1)
+                    const SizedBox(width: 10),
+                    const Spacer(flex: 1)
                   ],
                 ),
               ),
             ),
             // membuat button Line
-            SizedBox(height: 23),
+            const SizedBox(height: 23),
             InkWell(
               borderRadius: BorderRadius.circular(3),
               onTap: () {},
@@ -244,20 +244,20 @@ class LoginPage extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10.0),
                       child: SvgPicture.asset('assets/svgs/lineicon.svg'),
                     ),
-                    Spacer(flex: 1),
+                    const Spacer(flex: 1),
                     Text(
                       'Lanjutkan dengan Line',
                       style: GoogleFonts.roboto(
                           fontSize: 14, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(width: 10),
-                    Spacer(flex: 1)
+                    const SizedBox(width: 10),
+                    const Spacer(flex: 1)
                   ],
                 ),
               ),
             ),
             //membuat button apple
-            SizedBox(height: 23),
+            const SizedBox(height: 23),
             InkWell(
               borderRadius: BorderRadius.circular(3),
               onTap: () {},
@@ -273,14 +273,14 @@ class LoginPage extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 5.0),
                       child: Image.asset('assets/images/apple.png'),
                     ),
-                    Spacer(flex: 1),
+                    const Spacer(flex: 1),
                     Text(
                       'Lanjutkan dengan Apple',
                       style: GoogleFonts.roboto(
                           fontSize: 14, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(width: 5),
-                    Spacer(flex: 1)
+                    const SizedBox(width: 5),
+                    const Spacer(flex: 1)
                   ],
                 ),
               ),

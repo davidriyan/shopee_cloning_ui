@@ -30,21 +30,21 @@ class HomePage extends StatelessWidget {
                             width: MediaQuery.of(context).size.width / 1.3,
                             child: TextField(
                               decoration: InputDecoration(
-                                  contentPadding: EdgeInsets.all(0),
+                                  contentPadding: const EdgeInsets.all(0),
                                   border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(3),
-                                      borderSide:
-                                          BorderSide(color: Colors.white)),
+                                      borderSide: const BorderSide(
+                                          color: Colors.white)),
                                   fillColor: Colors.white,
                                   filled: true,
                                   focusedBorder: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(3),
-                                      borderSide:
-                                          BorderSide(color: Colors.white)),
+                                      borderSide: const BorderSide(
+                                          color: Colors.white)),
                                   hintText: 'Setiap Hari Extra Cashback 50 %',
                                   hintStyle: GoogleFonts.roboto(
                                     fontSize: 14,
-                                    color: Color(0xffED4D2D),
+                                    color: const Color(0xffED4D2D),
                                     fontWeight: FontWeight.w300,
                                   ),
                                   prefixIcon: Padding(
@@ -59,14 +59,14 @@ class HomePage extends StatelessWidget {
                                   )),
                             ),
                           ),
-                          SizedBox(width: 5),
+                          const SizedBox(width: 5),
                           SvgPicture.asset('assets/svgs/charthome.svg'),
-                          SizedBox(width: 15),
+                          const SizedBox(width: 15),
                           SvgPicture.asset('assets/svgs/komentaricon.svg')
                         ],
                       ),
                     ),
-                    SizedBox(height: 35),
+                    const SizedBox(height: 35),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -75,38 +75,39 @@ class HomePage extends StatelessWidget {
                             Row(
                               children: [
                                 SvgPicture.asset('assets/svgs/spaylater.svg'),
-                                SizedBox(width: 10),
+                                const SizedBox(width: 10),
                                 Text(
                                   'SPayLater',
                                   style: GoogleFonts.roboto(
                                       fontSize: 24,
                                       fontWeight: FontWeight.w500,
-                                      color: Color(0xffffffff)),
+                                      color: const Color(0xffffffff)),
                                 )
                               ],
                             ),
-                            SizedBox(height: 5),
+                            const SizedBox(height: 5),
                             Text(
                               'BELI SEKARANG, BAYAR NANTI',
                               style: GoogleFonts.roboto(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w300,
-                                  color: Color(0xffffffff)),
+                                  color: const Color(0xffffffff)),
                             ),
                             Row(
                               children: [
                                 Text(
                                   'SPayLater oleh PT Commerce Finance telah diawasi oleh Otoritas Jasa Keuangan',
                                   style: GoogleFonts.roboto(
-                                      fontSize: 3, color: Color(0xffFFFFFF)),
+                                      fontSize: 3,
+                                      color: const Color(0xffFFFFFF)),
                                 ),
                                 Container(
                                   height: 3,
                                   width: 27,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(1),
-                                      color: Color(0xffffffff)),
-                                  child: Text('CEK DI SINI'),
+                                      color: const Color(0xffffffff)),
+                                  child: const Text('CEK DI SINI'),
                                 )
                               ],
                             )
@@ -118,12 +119,12 @@ class HomePage extends StatelessWidget {
                                 style: GoogleFonts.roboto(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xffFFFFFF))),
+                                    color: const Color(0xffFFFFFF))),
                             Text('RP0',
                                 style: GoogleFonts.roboto(
                                     fontSize: 50,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xffFEFC03))),
+                                    color: const Color(0xffFEFC03))),
                           ],
                         )
                       ],
@@ -137,7 +138,7 @@ class HomePage extends StatelessWidget {
                           width: 404,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4),
-                              color: Color(0xffFFFFFF)),
+                              color: const Color(0xffFFFFFF)),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
@@ -145,7 +146,7 @@ class HomePage extends StatelessWidget {
                               Container(
                                 height: 28,
                                 width: 1,
-                                color: Color(0xff747474),
+                                color: const Color(0xff747474),
                               ),
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -155,7 +156,7 @@ class HomePage extends StatelessWidget {
                                     children: [
                                       SvgPicture.asset(
                                           'assets/svgs/iconsaldoshopee.svg'),
-                                      SizedBox(width: 10),
+                                      const SizedBox(width: 10),
                                       Text(
                                         'Rp.5.500.000',
                                         style: GoogleFonts.roboto(fontSize: 12),
@@ -171,7 +172,7 @@ class HomePage extends StatelessWidget {
                               Container(
                                 height: 28,
                                 width: 1,
-                                color: Color(0xff747474),
+                                color: const Color(0xff747474),
                               ),
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -181,7 +182,7 @@ class HomePage extends StatelessWidget {
                                     children: [
                                       SvgPicture.asset(
                                           'assets/svgs/iconcoin.svg'),
-                                      SizedBox(width: 10),
+                                      const SizedBox(width: 10),
                                       Text(
                                         '10.000 Koin',
                                         style: GoogleFonts.roboto(fontSize: 12),
@@ -194,7 +195,7 @@ class HomePage extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              SizedBox(width: 20)
+                              const SizedBox(width: 20)
                             ],
                           ),
                         ),
@@ -212,7 +213,7 @@ class HomePage extends StatelessWidget {
                             'assets/svgs/shopeepaydisekitarmu.svg'),
                       ],
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -224,17 +225,17 @@ class HomePage extends StatelessWidget {
                         SvgPicture.asset('assets/svgs/shopeelive.svg'),
                       ],
                     ),
-                    SizedBox(height: 25),
+                    const SizedBox(height: 25),
                     Row(
                       children: [
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Flexible(
                           flex: 1,
                           child: Container(
                             height: 100,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                     image: AssetImage(
                                         'assets/images/gratisuangbelanja.png'),
                                     fit: BoxFit.fitWidth)),
@@ -247,7 +248,7 @@ class HomePage extends StatelessWidget {
                             // width: 167,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                     image: AssetImage(
                                         'assets/images/cashback100%.png'),
                                     fit: BoxFit.contain)),
@@ -259,16 +260,16 @@ class HomePage extends StatelessWidget {
                             height: 100,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                     image:
                                         AssetImage('assets/images/avoskin.png'),
                                     fit: BoxFit.contain)),
                           ),
                         ),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                       ],
                     ),
-                    SizedBox(height: 30),
+                    const SizedBox(height: 30),
                     Stack(
                       children: [
                         Column(
@@ -281,22 +282,22 @@ class HomePage extends StatelessWidget {
                             Container(
                               height: MediaQuery.of(context).size.height,
                               width: MediaQuery.of(context).size.width,
-                              color: Color(0xffFFEAD9),
+                              color: const Color(0xffFFEAD9),
                             ),
                           ],
                         ),
                         Column(
                           children: [
                             Image.asset('assets/images/zonapenggunabaru.png'),
-                            SizedBox(height: 10),
+                            const SizedBox(height: 10),
                             Text(
                               'VOUCHER SPESIAL',
                               style: GoogleFonts.roboto(
-                                  color: Color(0xffED4D2D),
+                                  color: const Color(0xffED4D2D),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18),
                             ),
-                            SizedBox(height: 18),
+                            const SizedBox(height: 18),
                             Padding(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 13.0),
@@ -313,64 +314,67 @@ class HomePage extends StatelessWidget {
                                     height: 85,
                                     decoration: BoxDecoration(
                                         border: Border.all(
-                                            color: Color(0xff939395))),
+                                            color: const Color(0xff939395))),
                                     child: Row(
                                       children: [
                                         Container(
                                           width: 94,
                                           height: 85,
-                                          color: Color(0xff4DA9A4),
+                                          color: const Color(0xff4DA9A4),
                                           child: Center(
                                             child: Text(
                                               'GRATIS ONGKIR',
                                               textAlign: TextAlign.center,
                                               style: GoogleFonts.roboto(
-                                                  color: Color(0xffFFFFFF),
+                                                  color:
+                                                      const Color(0xffFFFFFF),
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.bold),
                                             ),
                                           ),
                                         ),
-                                        SizedBox(width: 10),
+                                        const SizedBox(width: 10),
                                         Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            SizedBox(height: 8),
+                                            const SizedBox(height: 8),
                                             Text(
                                               'Min. Belanja Rp0',
                                               style: GoogleFonts.roboto(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.w600),
                                             ),
-                                            SizedBox(height: 6),
+                                            const SizedBox(height: 6),
                                             Container(
                                               height: 15,
                                               width: 90,
-                                              color: Color(0xffFFEAD9),
+                                              color: const Color(0xffFFEAD9),
                                               child: Text(
                                                 'Pengguna Baru',
                                                 textAlign: TextAlign.center,
                                                 style: GoogleFonts.roboto(
                                                     fontSize: 12,
-                                                    color: Color(0xffFF6A6A)),
+                                                    color: const Color(
+                                                        0xffFF6A6A)),
                                               ),
                                             ),
-                                            SizedBox(height: 6),
+                                            const SizedBox(height: 6),
                                             Text(
                                               'Berlaku 60 Hari',
                                               style: GoogleFonts.roboto(
                                                   fontSize: 15,
-                                                  color: Color(0xff7C7C7C)),
+                                                  color:
+                                                      const Color(0xff7C7C7C)),
                                             )
                                           ],
                                         ),
-                                        SizedBox(width: 18),
+                                        const SizedBox(width: 18),
                                         Container(
                                           height: 27,
                                           width: 68,
                                           decoration: BoxDecoration(
-                                              color: Color(0xffED4D2D),
+                                              color: const Color(0xffED4D2D),
                                               borderRadius:
                                                   BorderRadius.circular(4)),
                                           child: Material(
@@ -386,7 +390,8 @@ class HomePage extends StatelessWidget {
                                                   'Lihat',
                                                   textAlign: TextAlign.center,
                                                   style: GoogleFonts.roboto(
-                                                      color: Color(0xffFFFFFF),
+                                                      color: const Color(
+                                                          0xffFFFFFF),
                                                       fontSize: 15),
                                                 ),
                                               ),
